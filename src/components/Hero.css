@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  #mainImage {
+    height: 70vh;
+    min-height: 100%;
+  }
+}
+
+/* #appleapp{
+    display: none;
+  } */
+
+@media (max-width: 767px) {
+  #appleapp {
+    /* display: none; */
+  }
+}

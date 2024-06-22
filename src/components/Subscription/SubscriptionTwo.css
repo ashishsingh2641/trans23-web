@@ -1,0 +1,118 @@
+#subscription {
+    background-color: #dfe9f5;
+    height: 100%;
+    display: grid;
+    padding:2em 0;
+
+    place-items: center;
+}
+
+.wraper {
+    width: 100%;
+    position: relative;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    /* justify-content: space-between; */
+    gap: 3em;
+    font-size: 16px;
+    padding: 0 2em;
+
+}
+
+.SupCard {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2.5em 0;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.packagename {
+    /* width: 70%; */
+    padding: 0.6em 0;
+    color: #fff;
+    /* border-radius: 5px 35px 35px 5px; */
+    position: relative;
+    margin-left: -0.6em;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+
+}
+
+.pricepackage{
+    font-size: 2em;
+    margin: 0.8em 0;
+    color: #07001f;
+}
+
+.SupCard ul{
+    list-style: none;
+}
+
+.SupCard ul li{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    padding-bottom: 0.4em;
+    color: #000742;
+}
+
+.SupCard ul li:not(:last-child){
+    margin-bottom: 1.8em;
+    border-bottom: 1px solid #a4a5aa;
+}
+
+.subButton{
+    font-size: 1.2em;
+    border-bottom: 2.5em;
+    width: 80%;
+    padding: 1em 0;
+    margin-top: 2em;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.movers h3,
+.movers button{
+    background: linear-gradient(
+        45deg,
+        #ffe01c, #f8a71b
+    );
+}
+
+.storage h3,
+.storage button{
+    background: linear-gradient(
+        45deg,
+        #bff524, #45ba45
+    );
+}
+
+.courier h3,
+.courier button{
+    background: linear-gradient(45deg,
+    #00cdf3, #0179e9);
+}
+
+
+@media screen and (max-width:1000px) {
+    #subscription{
+        display: block;
+    }
+    .wraper{
+        display: flex;
+        flex-direction: column;
+        padding: 2em 1em;
+        gap:6em;
+    }
+    .SupCard{
+        width: 80%;
+        margin: auto;
+        min-width: 350px;
+    }
+}
